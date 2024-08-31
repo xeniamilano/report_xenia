@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Mensile Custodi 3 Luglio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Montserrat classic, sans-serif;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .page {
+            width: 21cm;
+            height: 29.7cm;
+            color: #DDEDEF;
+            text-align: center;
+            page-break-before: always; /* Inizia una nuova pagina prima di ogni .page */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .page-content {
+        top: 3cm; /* regola la distanza dall'header */
+        bottom: 3cm; /* regola la distanza dal footer */
+        left: 1cm;
+        right: 1cm;
+        text-align: center;
+        overflow-y: auto; /* aggiungi una scrollbar se il contenuto è troppo lungo */
+        height: 21.7cm; /* altezza fissa per il contenuto */
+        width: 21cm;
+        }
+        .header {
+            width: 21cm;
+            height: 3cm;
+            text-align: center;
+            display: flex;
+            justify-content: space-between; /* Allinea gli elementi sui bordi */
+            align-items: flex-end;
+        }
+
+        .header-left {
+            top: 1cm;
+            left: 1cm;
+            text-align: left;
+            padding-top: 0cm;
+            padding-right: 1cm;
+            padding-bottom: 0.5cm;
+            padding-left: 2.2cm;
+            font-weight: bold;
+        }
+        .header-right {
+            top: 1cm;
+            right: 1cm;
+            text-align: right;
+            padding-top: 0cm;
+            padding-right: 2.2cm;
+            padding-bottom: 0.5cm;
+            padding-left: 1cm;
+            font-weight: bold;
+        }
+        .footer {
+            width: 21cm;
+            height: 5cm;
+            text-align: center;
+            display: flex;
+            justify-content: space-between; /* Allinea gli elementi sui bordi */
+        }
+        .footer-left {
+            bottom: 1cm;
+            left: 1cm;
+            text-align: left;
+            padding-left: 2.2cm;
+            padding-bottom: 2cm;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .footer-right {
+            bottom: 1cm;
+            right: 1cm;
+            text-align: right;
+            padding-right: 2.2cm;
+            padding-top: 1cm;
+        }
+        .title {
+            font-size: 24px;
+            margin-top: 20px;
+            text-align: center;
+            padding-top: 1cm;
+        }
+        .title-sub {
+            font-size: 18px;
+            text-align: center;
+        }
+        .table {
+            width: 70%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-right: auto;
+            margin-left: auto;
+            border-collapse: collapse;
+        }
+        .table th{
+            border: none;
+            padding: 10px;
+            text-align: left;
+        }
+        .table td {
+            border: none;
+            padding: 10px;
+            text-align: right;
+        }
+        .image {
+            width: 70%;
+            margin-top: 80px;
+        }
+        .company-logo {
+            bottom: 1cm;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .page-background {
+            background-image: url(./images/sfondopagina.jpg); /* Cambia il percorso con l'immagine desiderata */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            page-break-before: always; /* Inizia una nuova pagina prima di ogni .page */
+        }
+        .page-background-copertina {
+            background-image: url(./images/copertina.jpg); /* Cambia il percorso con l'immagine desiderata */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            page-break-before: always; /* Inizia una nuova pagina prima di ogni .page */
+        }
+    </style>
+</head>
+<body>
+    <!-- Prima Pagina -->
+    <div class="page">
+        <div class="page-background-copertina">
+            <div class="header">
+                <div class="header-left">Custodi 3</div>
+                <div class="header-right">06/24</div>
+            </div>
+            <div class="page-content"></div>
+            <div class="footer">
+                <div class="footer-left">REPORT<br>MENSILE</div>
+                <div class="footer-right">
+                    APPARTAMENTO<br>
+                    Via Pietro Custodi 10<br>
+                    PROPRIETARIO<br>
+                    Ferrante Benvenuti, Manfredi Benvenuti
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Seconda Pagina -->
+    <div class="page">
+        <div class="page-background">
+            <div class="header">
+                <div class="header-left">Custodi 3</div>
+                <div class="header-right">06/24</div>
+            </div>
+            <div class="page-content">
+                <h1 class="title">RESOCONTO MENSILE</h1>
+                <table class="table">
+                    <tr><th>Fatturato</th><td><strong>€ 2805.34</strong></td></tr>
+                    <tr><th>Fee property manager</th><td><strong>€ 673.28</strong></td></tr>
+                    <tr><th>Fee proprietari</th><td><strong>€ 28.05</strong></td></tr>
+                    <tr><th>Pulizie</th><td><strong>€ 609.00</strong></td></tr>
+                    <tr><th>Tasse</th><td><strong>€ 319.84</strong></td></tr>
+                    <tr><th>Spese generali</th><td><strong>€ 139.60</strong></td></tr>
+                    <tr><th>Netto</th><td><span style="color: green; font-weight: bold;"><strong>€ 1035.57</strong></span></td></tr>
+                </table>
+                <h2 class="title">KPI</h2>
+                <p>I key performance indicators (kpis) indicano i più importanti<br>parametri da tenere in considerazione per il mese corrente.</p>
+                <table class="table">
+                    <tr><th>Occupancy</th><td><strong>96.77%</strong></td></tr>
+                    <tr><th>Giorni disponibili</th><td><strong>31</strong></td></tr>
+                    <tr><th>Netto giornaliero </th><td><span style="color: green; font-weight: bold;"><strong>€ 34.52</strong></span></td></tr>
+                </table>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+
+    <!-- Terza Pagina -->
+    <div class="page">
+        <div class="page-background">
+            <div class="header">
+                <div class="header-left">Custodi 3</div>
+                <div class="header-right">06/24</div>
+            </div>
+            <div class="page-content">
+                <h1 class="title">DETTAGLIO SPESE DI GESTIONE</h1>
+                <table class="table">
+                    <tr><th>Gestione integrata dei prezzi tramite le API delle OTA</th><td><strong>€ 25.00</strong></td><tr><th>Shelly + Smart Lock</th><td><strong>€ 15.00</strong></td>
+                    
+                    
+                    
+                    <tr><th>Arretrati Wifi Custodi 3</th><td><strong>€ 99.60</strong></td></tr>
+                    <tr><th>Totale</th><td><strong>€ 139.60</strong></td></tr>
+                </table>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+
+    <!-- Quarta Pagina -->
+    <div class="page">   
+        <div class="page-background">
+            <div class="header">
+                <div class="header-left">Custodi 3</div>
+                <div class="header-right">06/24</div>
+            </div>
+            <div class="page-content">
+                <h1 class="title">PREVISIONI LUGLIO</h1>
+                <h2 class="title-sub">EXPECTED KPI</h2>
+                <table class="table">
+                    <tr><th>Occupancy</th><td><strong>100.00%</strong></td></tr>
+                    <tr><th>Netto</th><td><span style="color: green; font-weight: bold;"><strong>€ 1195.86</strong></span></td></tr>
+                    <tr><th>Netto giornaliero</th><td><strong>€ 38.58</strong></td></tr>
+                </table>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+</body>
+</html>
